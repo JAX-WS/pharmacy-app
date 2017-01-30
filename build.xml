@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="generate-server" default="main" >
+    <property name="javahome" 
+        value="C:\Program Files (x86)\Java\jdk1.7.0" />
+    <property name="wsdl.location" 
+        value="src/main/webapp/WEB-INF/wsdl/apollopharmacy.wsdl" />
+    
+    <target name="main">
+        <exec executable="${javahome}\bin\wsimport.exe">
+            <arg line="${wsdl.location} -s src/main/java -Xdebug -verbose -Xnocompile" />
+        </exec>
+    </target>
+</project>

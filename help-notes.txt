@@ -1,0 +1,15 @@
+WSDL TO JAVA
+------------
+1- you have given a wsdl: we have the wsdl.added wsdl in my project
+2- create a maven webapp project: created the maven webapp
+3- add the jax-ws rt dependency: added the dependency
+4- add the build.xml that will generated the java classes from wsdl by using wsimport tool: added in project root and set the location of jdk
+5- now run the build.xml: build successful now.
+6- you will get sei interface, java classes, client class.
+7- now we have to write the implementtation class for the sei interface.
+done
+8- in the implementation class we have to write some business logic
+done.
+9- then configure sun-jaxws.xml and web.xml: done
+10- run the webapp: done
+11- access the wsdl and use the wsdl url in soap ui to test the web service.:wsdl
